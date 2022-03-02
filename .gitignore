@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+# Why
+.vs/
+x64/*
+*/x64

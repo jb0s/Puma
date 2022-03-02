@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Providers">
+      <UniqueIdentifier>{4d249b39-6ef4-4af4-8467-94b6a73234e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Models">
+      <UniqueIdentifier>{c737dd10-5ca3-4699-86e4-52a10e7ed077}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Models\Internal">
+      <UniqueIdentifier>{6f56a9c2-8d6a-4cf1-b91d-4ae3f830f2e9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="httplib.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FortniteGame.h">
+      <Filter>Source Files\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="Lightswitch.h">
+      <Filter>Source Files\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitingRoom.h">
+      <Filter>Source Files\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="OAuth.h">
+      <Filter>Source Files\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="Errors.h">
+      <Filter>Source Files\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="Profile.h">
+      <Filter>Source Files\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="Athena.h">
+      <Filter>Source Files\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Puma.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cloudstorage.h">
+      <Filter>Source Files\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="EmergencyNotice.h">
+      <Filter>Source Files\Models\Internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Puma.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
