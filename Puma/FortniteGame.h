@@ -7,7 +7,7 @@ namespace Puma::FortniteGame
 {
 	Json FortniteGameResponse = R"(
 	{
-		"_title": "Fortnite Game on Rift",
+		"_title": "{TITLE}",
 		"_locale": "en-US",
 		"lastModified": "2022-02-28T06:38:50.565Z",
 		"battleroyalenews": {
@@ -40,8 +40,8 @@ namespace Puma::FortniteGame
 						"image": null,
 						"hidden": false,
 						"messagetype": "normal",
-						"title": "{PUMA}",
-						"body": "{YOURE_NOT_SUPPOSED_TO_SEE_THIS}",
+						"title": "{TITLE}",
+						"body": "{BODY}",
 						"spotlight": false
 					}
 				],
@@ -59,8 +59,8 @@ namespace Puma::FortniteGame
 						"image": null,
 						"hidden": false,
 						"messagetype": "normal",
-						"title": "{PUMA}",
-						"body": "{YOURE_NOT_SUPPOSED_TO_SEE_THIS}",
+						"title": "{TITLE}",
+						"body": "{BODY}",
 						"spotlight": false
 					}
 				],
@@ -187,6 +187,7 @@ namespace Puma::FortniteGame
 		app->Get("/content/api/pages/fortnite-game", [](const Request& rq, Response& rs) 
 		{
 			Json res = FortniteGameResponse;
+			res["_title"] = "Fortnite Game on Puma " + Session::ServiceName;
 			if (Session::EmergencyNotice.IsEnabled)
 			{
 				res["emergencynotice"]["news"]["messages"][0]["title"] = Session::EmergencyNotice.Title;

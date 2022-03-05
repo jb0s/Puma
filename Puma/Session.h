@@ -5,6 +5,7 @@
 
 namespace Puma::Session
 {
+	std::string ServiceName;
 	std::string DisplayName;
 	Models::Internal::EmergencyNotice EmergencyNotice;
 

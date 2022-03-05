@@ -146,6 +146,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Athena.h" />
+    <ClInclude Include="Calendar.h" />
+    <ClInclude Include="CalendarUtils.h" />
     <ClInclude Include="Cloudstorage.h" />
     <ClInclude Include="Common.h" />
     <ClInclude Include="EmergencyNotice.h" />

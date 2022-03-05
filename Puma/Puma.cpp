@@ -5,13 +5,14 @@ namespace Puma
 	void start(std::string service)
 	{
 #ifdef DEVELOPMENT_MODE
-		std::cout << "Welcome to Puma " << service << ". This build is for testing purposes. Compiled on " << __DATE__ << ".\n";
-		std::cout << "Follow me on Twitter: @jakedothow\n\n";
-		std::cout << "Starting Puma webserver\n";
+		std::cout << "Welcome to Puma " << service << ". This build (" << __DATE__ << ") is for testing purposes.\n";
+		std::cout << "Starting webserver.\n";
 #else
 		std::cout << "Starting Puma " << service << ". Compiled on " << __DATE__ << ".\n";
 		std::cout << "Follow me on Twitter: @jakedothow\n\n";
 #endif
+
+		Session::ServiceName = service;
 
 		// Configure logging
 		app.set_logger([](const Request& rq, const Response& res)
@@ -27,6 +28,7 @@ namespace Puma
 		OAuth::init(&app);
 		Profile::init(&app);
 		Cloudstorage::init(&app);
+		Calendar::init(&app);
 
 		std::cout << "Listening on 127.0.0.1:8010 :)\n";
 		app.listen("127.0.0.1", 8010);

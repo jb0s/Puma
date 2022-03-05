@@ -10,6 +10,7 @@
 #include "Athena.h"
 #include "Profile.h"
 #include "Cloudstorage.h"
+#include "Calendar.h"
 #include "Session.h"
 
 namespace Puma
