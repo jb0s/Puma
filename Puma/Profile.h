@@ -44,7 +44,8 @@ namespace Puma::Profile
 				profileData["commandRevision"] = 1;
 			}
 
-			Json res = {
+			Json res = 
+			{
 				{"profileRevision", profileData["rvn"]},
 				{"profileId", profileId},
 				{"profileChangesBaseRevision", profileData["rvn"]},

@@ -118,6 +118,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -149,12 +150,12 @@
     <ClCompile Include="StandaloneClient.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Puma.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Puma\Puma.vcxproj">
       <Project>{e37f9373-44ac-47a6-97f4-821d8b6b998f}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Puma.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
