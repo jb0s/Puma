@@ -9,7 +9,7 @@ namespace Puma
 		std::cout << "Starting webserver.\n";
 #else
 		std::cout << "Starting Puma " << service << ". Compiled on " << __DATE__ << ".\n";
-		std::cout << "Follow me on Twitter: @jakedothow\n\n";
+		std::cout << "Follow me on Twitter: @jb0s__\n\n";
 #endif
 
 		Session::ServiceName = service;
